@@ -1,5 +1,6 @@
 @import url("./reset/reset.css");
 @import url("./font/index.css");
+@import url("./variables/index.css");
 
 body {
   font-family: "Muller", sans-serif;
@@ -28,14 +29,14 @@ input {
 }
 
 .button {
-  background-color: #ffaf18;
+  background-color: var(--main-color);
   font-weight: 700;
   color: #020303;
 }
 
 /* Header */
 .header {
-  height: 100px;
+  height: var(--header-height);
   position: relative;
 }
 
@@ -43,9 +44,8 @@ input {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100px;
+  height: var(--header-height);
   z-index: -1;
-  background-color: #ffffff;
   box-shadow: 0px 3px 14px 1px rgba(152, 152, 152, 0.2);
 }
 
@@ -71,7 +71,7 @@ input {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #ffc468;
+  color: var(--logo-text-color);
 }
 
 .header__logo-img {
@@ -94,9 +94,8 @@ input {
 
 .navbar__link {
   line-height: 1.2;
-  font-weight: 400;
   letter-spacing: 0.02em;
-  color: #a46b00;
+  color: var(--navbar-color);
 }
 /* /Header */
 
@@ -109,7 +108,7 @@ input {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - var(--header-height));
 }
 
 .body {
@@ -125,12 +124,12 @@ input {
 }
 
 .content__title {
-  color: #b99150;
+  color: var(--secondary-color);
   padding-bottom: 60px;
 }
 
 .content__title span {
-  color: #ffaf18;
+  color: var(--main-color);
 }
 .content__cards {
   display: grid;
@@ -151,19 +150,19 @@ input {
 
 .item-cards__content {
 }
+
 .item-cards__title {
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.02em;
-  color: #ffaf18;
+  color: var(--main-color);
 }
 
 .item-cards__text {
   line-height: 16px;
-  font-weight: 400;
   letter-spacing: 0.02em;
-  color: #b99150;
+  color: var(--secondary-color);
 }
 
 .content__button {
@@ -204,7 +203,6 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 355px;
 }
 
 .pizzas-list__image img {
@@ -223,7 +221,6 @@ input {
   text-align: center;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 400;
   color: #181a1a;
   padding-bottom: 16px;
 }
@@ -277,17 +274,16 @@ input {
   font-size: 35px;
   line-height: 45px;
   font-weight: 800;
-  color: #ffaf18;
+  color: var(--main-color);
 }
 
 .footer__title span {
-  color: #b99150;
+  color: var(--secondary-color);
 }
 
 .footer__text {
   line-height: 24px;
-  font-weight: 400;
-  color: #b99150;
+  color: var(--secondary-color);
 }
 
 .footer__form {
@@ -301,17 +297,16 @@ input {
 
 .form-delivery__inp {
   min-height: 60px;
-  border: 1px solid #b99150;
-
+  border: 1px solid var(--secondary-color);
+  cursor: pointer;
   font-size: 18px;
   line-height: 45px;
-  font-weight: 400;
   padding-left: 22px;
-  color: #cba86e;
+  color: var(--input-color);
 }
 
 .form-delivery__inp::placeholder {
-  color: #cba86e;
+  color: var(--input-color);
 }
 
 .form-delivery__button {
