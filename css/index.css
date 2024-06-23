@@ -1,0 +1,303 @@
+@import url("./reset/reset.css");
+@import url("./font/index.css");
+
+body {
+  font-family: "Muller", sans-serif;
+}
+
+.container {
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 55px;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 35px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+input {
+  outline: none;
+}
+
+.button {
+  background-color: #ffaf18;
+  font-weight: 700;
+  color: #020303;
+}
+
+/* Header */
+.header {
+  height: 100px;
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 14px 1px rgba(152, 152, 152, 0.2);
+}
+
+.header__container {
+  height: 100%;
+}
+
+.header__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 900px;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__logo-text {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #ffc468;
+}
+
+.header__logo-img {
+}
+
+.header__navbar {
+}
+
+.navbar {
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar__item {
+}
+
+.navbar__link {
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #a46b00;
+}
+/* /Header */
+
+/* Best pizza */
+.best-pizza {
+}
+
+.best-pizza__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  min-height: calc(100vh - 100px);
+}
+
+.body {
+}
+
+.body__content {
+}
+
+.body__image {
+}
+
+.content {
+}
+
+.content__title {
+  color: #b99150;
+  padding-bottom: 60px;
+}
+
+.content__title span {
+  color: #ffaf18;
+}
+.content__cards {
+  display: grid;
+  grid-template-columns: 305px 1fr;
+  gap: 47px;
+  padding-bottom: 60px;
+}
+
+.cards__item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.item-cards__icon {
+  flex: 0 0 auto;
+}
+
+.item-cards__content {
+}
+.item-cards__title {
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: #ffaf18;
+}
+
+.item-cards__text {
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #b99150;
+}
+
+.content__button {
+  width: 224px;
+  height: 60px;
+}
+
+.cards {
+}
+
+.image {
+}
+
+.image__img {
+}
+/* /Best pizza */
+
+/* Pizzas list */
+.pizzas {
+  padding-bottom: 239px;
+}
+
+.pizzas__title {
+  text-align: center;
+  color: #bd985c;
+  padding-bottom: 60px;
+}
+
+.pizzas__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));
+  gap: 24px;
+}
+
+.pizzas-list__item {
+  padding: 27px 23px 15px;
+  box-shadow: 0px 3px 14px 1px rgba(152, 152, 152, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pizzas-list__image {
+}
+
+.pizzas-list__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #382400;
+  padding-bottom: 10px;
+}
+
+.pizzas-list__description {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #181a1a;
+  padding-bottom: 16px;
+}
+
+.pizzas-list__button {
+  width: 242px;
+  height: 50px;
+}
+/* /Pizzas list */
+
+/* Footer */
+.footer {
+  padding-bottom: 111px;
+}
+
+.footer__container {
+  max-width: 1367px;
+}
+
+.footer__body {
+  display: grid;
+  grid-template-columns: 385px 330px 410px;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.footer__column {
+}
+
+.footer__column.info {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.footer__title {
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 800;
+  color: #ffaf18;
+}
+.footer__title span {
+  color: #b99150;
+}
+
+.footer__text {
+  line-height: 24px;
+  font-weight: 400;
+  color: #b99150;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-delivery {
+}
+
+.form-delivery__inp {
+  min-height: 60px;
+  border: 1px solid #b99150;
+
+  font-size: 18px;
+  line-height: 45px;
+  font-weight: 400;
+  padding-left: 22px;
+  color: #cba86e;
+}
+
+.form-delivery__inp::placeholder {
+  color: #cba86e;
+}
+
+.form-delivery__button {
+  height: 60px;
+}
+/* /Footer */

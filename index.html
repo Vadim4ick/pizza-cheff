@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Cheff</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__body">
+          <div class="header__logo">
+            <img
+              class="header__logo-img"
+              src="./img/logo.png"
+              alt="pizza logo"
+            />
+            <p class="header__logo-text">
+              Pizza <br />
+              cheff
+            </p>
+          </div>
+
+          <nav class="header__navbar navbar">
+            <ul class="navbar__list">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Пиццы</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Напитки</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Доставка и оплата</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="best-pizza">
+        <div class="container">
+          <div class="best-pizza__body body">
+            <div class="body__content content">
+              <h1 class="content__title">
+                Самая вкусная пицца в мире <br />
+                <span>только в Pizza Cheff</span>
+              </h1>
+
+              <div class="content__cards cards">
+                <div class="cards__item item-cards">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="currentColor"
+                    class="item-cards__icon"
+                  >
+                    <rect width="60" height="60" fill="url(#pattern0_144_4)" />
+                    <defs>
+                      <pattern
+                        id="pattern0_144_4"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_144_4"
+                          transform="scale(0.0166667)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_144_4"
+                        width="60"
+                        height="60"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+
+                  <div class="item-cards__content">
+                    <p class="item-cards__title">Лучшее тесто</p>
+
+                    <p class="item-cards__text">
+                      Мы создаем тесто только из отборной итальянской муки
+                      наивысшего качества
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__item item-cards">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="currentColor"
+                    class="item-cards__icon"
+                  >
+                    <rect width="60" height="60" fill="url(#pattern0_144_6)" />
+                    <defs>
+                      <pattern
+                        id="pattern0_144_6"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_144_6"
+                          transform="scale(0.0166667)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_144_6"
+                        width="60"
+                        height="60"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+
+                  <div class="item-cards__content">
+                    <p class="item-cards__title">Лучшие повара</p>
+
+                    <p class="item-cards__text">
+                      Пиццы готовят самые профессиональные итальянские повара
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__item item-cards">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="60"
+                    height="60"
+                    viewBox="0 0 60 60"
+                    fill="currentColor"
+                    class="item-cards__icon"
+                  >
+                    <rect width="60" height="60" fill="url(#pattern0_144_5)" />
+                    <defs>
+                      <pattern
+                        id="pattern0_144_5"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_144_5"
+                          transform="scale(0.0166667)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_144_5"
+                        width="60"
+                        height="60"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+
+                  <div class="item-cards__content">
+                    <p class="item-cards__title">гарантия качества</p>
+
+                    <p class="item-cards__text">
+                      Наша пиццерия получила множество наград и признаний по
+                      всему миру
+                    </p>
+                  </div>
+                </div>
+
+                <div class="cards__item item-cards">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="60"
+                    height="56"
+                    viewBox="0 0 60 56"
+                    fill="currentColor"
+                    class="item-cards__icon"
+                  >
+                    <rect width="60" height="56" fill="url(#pattern0_144_7)" />
+                    <defs>
+                      <pattern
+                        id="pattern0_144_7"
+                        patternContentUnits="objectBoundingBox"
+                        width="1"
+                        height="1"
+                      >
+                        <use
+                          xlink:href="#image0_144_7"
+                          transform="scale(0.0166667 0.0178571)"
+                        />
+                      </pattern>
+                      <image
+                        id="image0_144_7"
+                        width="60"
+                        height="56"
+                        xlink:href="data:image/png;base64,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"
+                      />
+                    </defs>
+                  </svg>
+
+                  <div class="item-cards__content">
+                    <p class="item-cards__title">отборные рецепты</p>
+
+                    <p class="item-cards__text">
+                      Мы используем рецепты от мировых лидеров в изготовлении
+                      пиццы
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <button class="content__button button">Выбрать пиццу</button>
+            </div>
+
+            <div class="body__image image">
+              <img class="image__img" src="./img/bigPizza.png" alt="bigPizza" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pizzas">
+        <div class="container">
+          <h2 class="pizzas__title">Выберите свою любимую пиццу</h2>
+
+          <div class="pizzas__list pizzas-list">
+            <article class="pizzas-list__item">
+              <div class="pizzas-list__image">
+                <img src="./img/pizzas/1.png" alt="" />
+              </div>
+
+              <p class="pizzas-list__title">Мясная Делюкс</p>
+
+              <div class="pizzas-list__description">
+                Пепперони, лук, бекон, томатная паста, колбаски, перец, грибы,
+                соус чили, ананасы
+              </div>
+
+              <button class="pizzas-list__button button">В корзину</button>
+            </article>
+
+            <article class="pizzas-list__item">
+              <div class="pizzas-list__image">
+                <img src="./img/pizzas/1.png" alt="" />
+              </div>
+
+              <p class="pizzas-list__title">Морская Премиум</p>
+
+              <div class="pizzas-list__description">
+                Перец, сыр, креветки, кальмары, мидии, лосось
+              </div>
+
+              <button class="pizzas-list__button button">В корзину</button>
+            </article>
+
+            <article class="pizzas-list__item">
+              <div class="pizzas-list__image">
+                <img src="./img/pizzas/1.png" alt="" />
+              </div>
+
+              <p class="pizzas-list__title">Бекон и Сосиски</p>
+
+              <div class="pizzas-list__description">
+                Бекон, сыр, сосиски, ананас, томатная паста
+              </div>
+
+              <button class="pizzas-list__button button">В корзину</button>
+            </article>
+
+            <article class="pizzas-list__item">
+              <div class="pizzas-list__image">
+                <img src="./img/pizzas/1.png" alt="" />
+              </div>
+
+              <p class="pizzas-list__title">Куриная Делюкс</p>
+
+              <div class="pizzas-list__description">
+                Курица, ананас, сыр Пепперони, соус для пиццы, томатная паста
+              </div>
+
+              <button class="pizzas-list__button button">В корзину</button>
+            </article>
+
+            <article class="pizzas-list__item">
+              <div class="pizzas-list__image">
+                <img src="./img/pizzas/1.png" alt="" />
+              </div>
+
+              <p class="pizzas-list__title">Барбекю Премиум</p>
+
+              <div class="pizzas-list__description">
+                Свинина BBQ, соус Барбкею, сыр, курица, соус для пиццы, соус
+                чили
+              </div>
+
+              <button class="pizzas-list__button button">В корзину</button>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__body">
+          <div class="footer__column info">
+            <h2 class="footer__title">
+              Хватит думать! <br />
+              <span>Доставим заказ за 30 минут!</span>
+            </h2>
+
+            <p class="footer__text">
+              Мы гарантированно доставим вашу пиццу за 30 минут с момента
+              оформления заказа. Если мы опоздаем даже на 1 минуту - вы
+              получаете весь заказ бесплатно и ваучер на скидку на следующий
+              заказ. Мы гордимся нашим сервисом и сделаем всё, чтобы наш клиент
+              был доволен и не остался голодный!
+            </p>
+          </div>
+
+          <div class="footer__column">
+            <form class="footer__form form-delivery">
+              <input
+                class="form-delivery__inp"
+                type="text"
+                placeholder="Ваше имя"
+              />
+              <input
+                class="form-delivery__inp"
+                type="text"
+                placeholder="Адрес доставки"
+              />
+              <input
+                class="form-delivery__inp"
+                type="text"
+                placeholder="Телефон"
+              />
+
+              <button class="button form-delivery__button">
+                Оформить заказ
+              </button>
+            </form>
+          </div>
+
+          <div class="footer__column">
+            <img src="./img/footerPizza.png" alt="footerPizza" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

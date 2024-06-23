@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Muller";
+  src: url("./../../font/Muller-Trial-Regular.woff2") format("woff2"),
+    url("./../../font/Muller-Trial-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muller";
+  src: url("./../../font/Muller-Trial-Bold.woff2") format("woff2"),
+    url("./../../font/Muller-Trial-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muller";
+  src: url("./../../font/Muller-Trial-ExtraBold.woff2") format("woff2"),
+    url("./../../font/Muller-Trial-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Muller";
+  src: url("./../../font/MullerNarrow-Trial-Heavy.woff2") format("woff2"),
+    url("./../../font/MullerNarrow-Trial-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
