@@ -4,4 +4,5 @@ const navbar = document.getElementById("navbar");
 burger.addEventListener("click", function () {
   this.classList.toggle("open");
   navbar.classList.toggle("open");
+  document.body.classList.toggle("hidden");
 });
