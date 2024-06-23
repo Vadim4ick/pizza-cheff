@@ -1,6 +1,6 @@
-@import url("./reset/reset.css");
-@import url("./font/index.css");
-@import url("./variables/index.css");
+@import url("./_reset.css");
+@import url("./_font.css");
+@import url("./_variables.css");
 
 body {
   font-family: "Muller", sans-serif;
@@ -107,7 +107,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 15px;
+  gap: 37px;
   min-height: calc(100vh - var(--header-height));
 }
 
@@ -133,7 +133,7 @@ input {
 }
 .content__cards {
   display: grid;
-  grid-template-columns: 305px 1fr;
+  grid-template-columns: 305px 275px;
   gap: 47px;
   padding-bottom: 60px;
 }
@@ -176,7 +176,9 @@ input {
 .image {
 }
 
-.image__img {
+.body__image img {
+  max-width: 100%;
+  width: 100%;
 }
 /* /Best pizza */
 
@@ -313,3 +315,57 @@ input {
   height: 60px;
 }
 /* /Footer */
+
+@media (max-width: 1250px) {
+  .best-pizza__body.body {
+    flex-direction: column-reverse;
+    min-height: 100%;
+
+    padding-top: 70px;
+  }
+
+  .content__button {
+    width: 100%;
+  }
+
+  .content__cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* .footer__body {
+    flex-wrap: wrap;
+  } */
+
+  /* .footer__column.image {
+    margin-right: 0;
+    padding: 0;
+  } */
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 768px) {
+  .header__navbar.navbar {
+    display: none;
+  }
+
+  .content__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .pizzas__title {
+    padding-bottom: 35px;
+    padding-top: 55px;
+  }
+
+  h1 {
+    font-size: 33px;
+    line-height: 43px;
+  }
+
+  h2 {
+    font-size: 25px;
+    line-height: 45px;
+  }
+}
