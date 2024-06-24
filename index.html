@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pizza Cheff</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.css"
+      integrity="sha512-5gTxhbmgsOKfPP2+TeKslkMmyxF0Cmyr2YrJrfaXD/ChLHavFXGzDDG9ZiOca1P/2/5nXuujkB2BWymVKu1pPg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
@@ -243,10 +250,9 @@
 
           <div class="pizzas__list pizzas-list">
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/1.png" alt="" />
-              </div>
-
+              <a href="./img/pizzas/1.png" class="pizzas-list__link">
+                <img src="./img/pizzas/1.png" alt="Мясная Делюкс" />
+              </a>
               <p class="pizzas-list__title">Мясная Делюкс</p>
 
               <div class="pizzas-list__description">
@@ -258,9 +264,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/2.png" alt="" />
-              </div>
+              <a href="./img/pizzas/2.png" class="pizzas-list__link">
+                <img src="./img/pizzas/2.png" alt="Мясная Делюкс" />
+              </a>
 
               <p class="pizzas-list__title">Морская Премиум</p>
 
@@ -272,9 +278,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/3.png" alt="" />
-              </div>
+              <a href="./img/pizzas/3.png" class="pizzas-list__link">
+                <img src="./img/pizzas/3.png" alt="Мясная Делюкс" />
+              </a>
 
               <p class="pizzas-list__title">Бекон и Сосиски</p>
 
@@ -286,9 +292,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/4.png" alt="" />
-              </div>
+              <a href="./img/pizzas/4.png" class="pizzas-list__link">
+                <img src="./img/pizzas/4.png" alt="Мясная Делюкс" />
+              </a>
 
               <p class="pizzas-list__title">Куриная Делюкс</p>
 
@@ -300,9 +306,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/5.png" alt="" />
-              </div>
+              <a href="./img/pizzas/5.png" class="pizzas-list__link">
+                <img src="./img/pizzas/5.png" alt="Мясная Делюкс" />
+              </a>
 
               <p class="pizzas-list__title">Барбекю Премиум</p>
 
@@ -315,9 +321,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/6.png" alt="" />
-              </div>
+              <a href="./img/pizzas/6.png" class="pizzas-list__link">
+                <img src="./img/pizzas/6.png" alt="Мясная Делюкс" />
+              </a>
 
               <p class="pizzas-list__title">Пепперони Дабл</p>
 
@@ -329,10 +335,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/7.png" alt="" />
-              </div>
-
+              <a href="./img/pizzas/7.png" class="pizzas-list__link">
+                <img src="./img/pizzas/7.png" alt="Мясная Делюкс" />
+              </a>
               <p class="pizzas-list__title">Куриное трио</p>
 
               <div class="pizzas-list__description">
@@ -344,9 +349,9 @@
             </article>
 
             <article class="pizzas-list__item">
-              <div class="pizzas-list__image">
-                <img src="./img/pizzas/8.png" alt="" />
-              </div>
+              <a href="./img/pizzas/8.png" class="pizzas-list__link">
+                <img src="./img/pizzas/8.png" alt="Мясная Делюкс" />
+              </a>
 
               <p class="pizzas-list__title">Сырная</p>
 
@@ -380,22 +385,40 @@
           </div>
 
           <div class="footer__column inputs">
-            <form class="footer__form form-delivery">
-              <input
-                class="form-delivery__inp"
-                type="text"
-                placeholder="Ваше имя"
-              />
-              <input
-                class="form-delivery__inp"
-                type="text"
-                placeholder="Адрес доставки"
-              />
-              <input
-                class="form-delivery__inp"
-                type="text"
-                placeholder="Телефон"
-              />
+            <form id="formDelivery" class="footer__form form-delivery">
+              <div class="form-delivery__block">
+                <span class="error" id="nameError"></span>
+
+                <input
+                  class="form-delivery__inp"
+                  id="inpName"
+                  type="text"
+                  name="name"
+                  placeholder="Ваше имя"
+                />
+              </div>
+              <div class="form-delivery__block">
+                <span class="error" id="addressError"></span>
+
+                <input
+                  class="form-delivery__inp"
+                  id="inpAddress"
+                  type="text"
+                  name="address"
+                  placeholder="Адрес доставки"
+                />
+              </div>
+              <div class="form-delivery__block">
+                <span class="error" id="phoneError"></span>
+
+                <input
+                  class="form-delivery__inp"
+                  id="inpPhone"
+                  type="text"
+                  name="phone"
+                  placeholder="Телефон"
+                />
+              </div>
 
               <button class="button form-delivery__button">
                 Оформить заказ
@@ -410,6 +433,14 @@
       </div>
     </footer>
 
+    <div class="popup-overlay" id="popupOverlay"></div>
+    <div class="popup" id="popupMessage">Спасибо за заказ</div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"
+      integrity="sha512-Vtot07oogPy4e0JzAfUgyvia0fATgR1PWWNG89EeQgPXmaIhjGQIFijUVxRn0TScCMCH57Y7eJSixmYYDJkJ1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/index.js"></script>
   </body>
 </html>
