@@ -2,6 +2,8 @@ const burger = document.getElementById("hamburger");
 const navbar = document.getElementById("navbar");
 const formDelivery = document.getElementById("formDelivery");
 
+const formDeliveryBtn = document.querySelector(".form-delivery__button");
+
 const nameInput = document.getElementById("inpName");
 const addressInput = document.getElementById("inpAddress");
 const phoneInput = document.getElementById("inpPhone");
@@ -55,6 +57,8 @@ function submitForm(e) {
 
   let isValid = true;
 
+  formDeliveryBtn.setAttribute("disabled", "");
+
   if (!nameInput.value.trim()) {
     isValid = false;
     nameError.textContent = "Пожалуйста, введите имя.";
@@ -88,6 +92,7 @@ function submitForm(e) {
         Object.fromEntries(formData.entries())
       );
 
+      formDeliveryBtn.removeAttribute("disabled");
       resetForm();
     }, 1000); // Имитируем задержку в 1 секунду
 
@@ -100,15 +105,16 @@ function submitForm(e) {
     //   body: JSON.stringify(formData),
     // })
     //   .then((response) => response.json())
-    //   .then((data) => {
-    // popupOverlay.style.display = "block";
-    // popupMessage.style.display = "block";
+    //   .then(() => {
+    // popupOpen()
     // resetForm();
     //   })
     //   .catch((error) => {
     //     console.error("Error:", error);
     //   });
   } else {
+    formDeliveryBtn.removeAttribute("disabled");
+
     setTimeout(() => {
       resetError();
     }, 3000);
