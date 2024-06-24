@@ -7,6 +7,11 @@
 
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.css"
       integrity="sha512-5gTxhbmgsOKfPP2+TeKslkMmyxF0Cmyr2YrJrfaXD/ChLHavFXGzDDG9ZiOca1P/2/5nXuujkB2BWymVKu1pPg=="
       crossorigin="anonymous"
@@ -67,7 +72,10 @@
               </h1>
 
               <div class="content__cards cards">
-                <div class="cards__item item-cards">
+                <div
+                  class="cards__item item-cards wow bounceIn"
+                  data-wow-duration="1s"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -239,7 +247,12 @@
             </div>
 
             <div class="body__image">
-              <img src="./img/bigPizza.png" alt="bigPizza" />
+              <img
+                class="fadeOutTopLeft wow animate__slideInRight"
+                data-wow-duration="1s"
+                src="./img/bigPizza.png"
+                alt="bigPizza"
+              />
             </div>
           </div>
         </div>
@@ -250,7 +263,10 @@
           <h2 class="pizzas__title">Выберите свою любимую пиццу</h2>
 
           <div class="pizzas__list pizzas-list">
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/1.png" class="pizzas-list__link">
                 <img src="./img/pizzas/1.png" alt="Мясная Делюкс" />
               </a>
@@ -264,7 +280,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/2.png" class="pizzas-list__link">
                 <img src="./img/pizzas/2.png" alt="Мясная Делюкс" />
               </a>
@@ -278,7 +297,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/3.png" class="pizzas-list__link">
                 <img src="./img/pizzas/3.png" alt="Мясная Делюкс" />
               </a>
@@ -292,7 +314,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/4.png" class="pizzas-list__link">
                 <img src="./img/pizzas/4.png" alt="Мясная Делюкс" />
               </a>
@@ -306,7 +331,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/5.png" class="pizzas-list__link">
                 <img src="./img/pizzas/5.png" alt="Мясная Делюкс" />
               </a>
@@ -321,7 +349,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/6.png" class="pizzas-list__link">
                 <img src="./img/pizzas/6.png" alt="Мясная Делюкс" />
               </a>
@@ -335,7 +366,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/7.png" class="pizzas-list__link">
                 <img src="./img/pizzas/7.png" alt="Мясная Делюкс" />
               </a>
@@ -349,7 +383,10 @@
               <button class="pizzas-list__button button">В корзину</button>
             </article>
 
-            <article class="pizzas-list__item">
+            <article
+              class="pizzas-list__item wow animate__zoomIn"
+              data-wow-duration="1s"
+            >
               <a href="./img/pizzas/8.png" class="pizzas-list__link">
                 <img src="./img/pizzas/8.png" alt="Мясная Делюкс" />
               </a>
@@ -436,6 +473,18 @@
 
     <div class="popup-overlay" id="popupOverlay"></div>
     <div class="popup" id="popupMessage">Спасибо за заказ</div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+      integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      var wow = new WOW({});
+      wow.init();
+    </script>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.3/simple-lightbox.min.js"
